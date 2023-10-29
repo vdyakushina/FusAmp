@@ -6,13 +6,13 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
 1. bam aligned with bwa met
 2. Files fith qc and read counts:
    2.1. qc.tsv - some qc metrics:
-      total	- total number of raw reads; 
-      unmapped - number of reads unmapped;
-      total_with_MAPQ60	number of reads with MAPQ 60;
-      on_target - % of reads aligned on target. Calculation: sum of values received with bedtools coverage against designed bed, devided by total;
-      controls_07_sum	- number of reads aligned on control genes under condition that target covered by read at least to 0.7 and read covered with target at least to 70%. Calculation: sum of values received with bedtools coverage -f 0.7 -F 0.7;
-      controls_integrity - % reads aligned on control genes under condition -f 0.7 -F 0.7 from total number of reads aligned on control genes;
-      controls_mean_fraction - mean value from frctions of targets (accordinf ded file) covered. Calulated from columun containind "% of A at depth" from bedtools coverage resulting file.
+      - total	- total number of raw reads;
+      - unmapped - number of reads unmapped;
+      - total_with_MAPQ60	number of reads with MAPQ 60;
+      - on_target - % of reads aligned on target. Calculation: sum of values received with bedtools coverage against designed bed, devided by total;
+      - controls_07_sum	- number of reads aligned on control genes under condition that target covered by read at least to 0.7 and read covered with target at least to 70%. Calculation: sum of values received with bedtools coverage -f 0.7 -F 0.7;
+      - controls_integrity - % reads aligned on control genes under condition -f 0.7 -F 0.7 from total number of reads aligned on control genes;
+      - controls_mean_fraction - mean value from frctions of targets (accordinf ded file) covered. Calulated from columun containind "% of A at depth" from bedtools coverage resulting file.
    2.2. fusions.tsv - raw read counts from fusions, calculated with bedtools coverage. Contains non confident calls, filtered fusions are in results.tsv.
    2.3. imbalance_five_p.tsv - raw read counts from 5' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.
    2.4. imbalance_three_p.tsv - raw read counts from 3' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.
@@ -24,7 +24,9 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
      
 ## Run
   fusamp.py --fasta [reference.fa] --fastq1 [R1.fq.gz] --fastq2 [R2.fq.gz] --bam [bamfile] --adapters [adapters.file] --panel [Designed.bed] --controls [controls.file] --output [output directory]
+
   help:
+
   fusamp.py -h
   --fasta FASTA         path to ref fasta file
   --fastq1 FASTQ1       path to fastq1 file
