@@ -1,6 +1,6 @@
 # FusAmp
 
-Analize fusions, 3'/5' imbalance, expression markers from targeted amplification based sequencing.
+Analyze fusions, 3'/5' imbalance, expression markers from targeted amplification based sequencing.
 
 ## Results:
 1. bam aligned with bwa met<br/>
