@@ -4,7 +4,7 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
 
 ## Results:
 1. bam aligned with bwa met<br/>
-2. Files with qc and read counts:<br/>
+2. Files with qc and read counts (will be writen to --output directory):<br/>
 
    2.1. qc.tsv - some qc metrics:
       - total	- total number of raw reads;
@@ -45,9 +45,9 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
   -o OUTPUT, --output OUTPUT
                         name of output directory to put results<br/>
 
-## Prerequisite
-  python3
-  samtools
-  bedtools
+## Prerequisite<br/>
+  python3<br/>
+  samtools<br/>
+  bedtools<br/>
   standart python libraries: pandas, numpy, subprocess, re, os, argparse, pathlib
 
