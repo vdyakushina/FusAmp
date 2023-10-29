@@ -13,11 +13,13 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
       - controls_07_sum	- number of reads aligned on control genes under condition that target covered by read at least to 0.7 and read covered with target at least to 70%. Calculation: sum of values received with bedtools coverage -f 0.7 -F 0.7;
       - controls_integrity - % reads aligned on control genes under condition -f 0.7 -F 0.7 from total number of reads aligned on control genes;
       - controls_mean_fraction - mean value from frctions of targets (accordinf ded file) covered. Calulated from columun containind "% of A at depth" from bedtools coverage resulting file.
+   
    2.2. fusions.tsv - raw read counts from fusions, calculated with bedtools coverage. Contains non confident calls, filtered fusions are in results.tsv.
    2.3. imbalance_five_p.tsv - raw read counts from 5' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.
    2.4. imbalance_three_p.tsv - raw read counts from 3' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.
    2.5. imbalance.tsv Calculated as difference of counts 3' - 5' In case there ara several targets from 5' and 3' ends, the sum over tagets is calculated for each end.
-3. results.tsv
+
+4. results.tsv
    - fusions- fusions selected from fusions.tsv with algorithm (will describe later)
    - imbalance - imbalance target selected if it is outlier from distribution. Not implemented yet.
    - expression - expression targets selected if it is outlier from distribution. Not implemented yet.
