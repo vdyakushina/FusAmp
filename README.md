@@ -55,7 +55,7 @@ cd FusAmp/
   --fasta FASTA         path to ref fasta file. e.g. ./WG_IAD154041_THCAF2/WG_IAD154041_THCAF_v3.20181217._Reference.fasta<br/>
   --fastq1 FASTQ1       path to fastq1 file<br/>
   --fastq2 FASTQ2       path to fastq2 file<br/>
-  --bam BAM             path to ref fasta file<br/>
+  --bam BAM             path to bam file that will be written<br/>
   --adapters ADAPTERS   path to file with two adapter sequences, each sequnce in new line. e.g. adapters_Illumina.fa<br/>
   -p PANEL, --panel PANEL
                         path to design bed file. e.g. ./WG_IAD154041_THCAF_v3.20181217._Designed.bed<br/>
