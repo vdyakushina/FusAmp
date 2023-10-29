@@ -14,10 +14,10 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
       - controls_integrity - % reads aligned on control genes under condition -f 0.7 -F 0.7 from total number of reads aligned on control genes;
       - controls_mean_fraction - mean value from frctions of targets (accordinf ded file) covered. Calulated from columun containind "% of A at depth" from bedtools coverage resulting file.
    
-   2.2. fusions.tsv - raw read counts from fusions, calculated with bedtools coverage. Contains non confident calls, filtered fusions are in results.tsv.\n
-   2.3. imbalance_five_p.tsv - raw read counts from 5' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.
-   2.4. imbalance_three_p.tsv - raw read counts from 3' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.
-   2.5. imbalance.tsv Calculated as difference of counts 3' - 5' In case there ara several targets from 5' and 3' ends, the sum over tagets is calculated for each end.
+   2.2. fusions.tsv - raw read counts from fusions, calculated with bedtools coverage. Contains non confident calls, filtered fusions are in results.tsv.<br/>
+   2.3. imbalance_five_p.tsv - raw read counts from 5' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.<br/>
+   2.4. imbalance_three_p.tsv - raw read counts from 3' targets, calculated with bedtools coverage under condition -f 0.7 -F 0.7. Normalised with controls_07_sum.<br/>
+   2.5. imbalance.tsv Calculated as difference of counts 3' - 5' In case there ara several targets from 5' and 3' ends, the sum over tagets is calculated for each end.<br/>
 
 4. results.tsv
    - fusions- fusions selected from fusions.tsv with algorithm (will describe later)
