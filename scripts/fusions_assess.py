@@ -3,17 +3,17 @@
 import pandas as pd
 import numpy as np
 from subprocess import run, PIPE
-import re, sys, os, argparse, pathlib
+import re, os, argparse, pathlib
 
 parser = argparse.ArgumentParser(description="Analyse fusion panel")
-parser.add_argument("-p", "--panel", help="path to bed file")
-parser.add_argument("--controls", help="path file with control genes")
+parser.add_argument("-p", "--panel", help="path to design bed file. e.g. ./WG_IAD154041_THCAF_v3.20181217._Designed.bed")
+parser.add_argument("--controls", help="path file with control genes. Each gene in new line. e.g. ./WG_IAD154041_THCAF2/control_genes.txt")
 parser.add_argument("--bam", help="path to ref fasta file")
 parser.add_argument("-o", "--output", help="name of output directory to put results")
 
 
 args = parser.parse_args()
-(panel, controls, bam, outdir)=(os.path.realpath(i) for i in vars(args).values())
+(panel, controls, bam, outdir)=(os.path.realpath(vars(args)[i]) for i in ['panel', 'controls', 'bam', 'output'])
 
 pathlib.Path(outdir).mkdir(parents=True, exist_ok=True) 
 control_genes=open(controls, 'r').read().strip().split('\n')
