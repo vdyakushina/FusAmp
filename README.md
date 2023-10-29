@@ -31,19 +31,19 @@ Analize fusions, 3'/5' imbalance, expression markers from targeted amplification
 ## Run
   fusamp.py --fasta [reference.fa] --fastq1 [R1.fq.gz] --fastq2 [R2.fq.gz] --bam [bamfile] --adapters [adapters.file] --panel [Designed.bed] --controls [controls.file] --output [output directory]
 
-  help:
+  help:<br/>
 
-  fusamp.py -h
-  --fasta FASTA         path to ref fasta file
-  --fastq1 FASTQ1       path to fastq1 file
-  --fastq2 FASTQ2       path to fastq2 file
-  --bam BAM             path to ref fasta file
-  --adapters ADAPTERS   path to file with two adapter sequences
+  fusamp.py -h<br/>
+  --fasta FASTA         path to ref fasta file<br/>
+  --fastq1 FASTQ1       path to fastq1 file<br/>
+  --fastq2 FASTQ2       path to fastq2 file<br/>
+  --bam BAM             path to ref fasta file<br/>
+  --adapters ADAPTERS   path to file with two adapter sequences<br/>
   -p PANEL, --panel PANEL
-                        path to bed file
-  --controls CONTROLS   path file with control genes
+                        path to bed file<br/>
+  --controls CONTROLS   path file with control genes<br/>
   -o OUTPUT, --output OUTPUT
-                        name of output directory to put results
+                        name of output directory to put results<br/>
 
 ## Prerequisite
   python3
