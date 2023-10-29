@@ -42,7 +42,7 @@ cd FusAmp-main/
 
 OR
 
-git clone https://github.com/vdyakushina/FusAmp.git
+git clone https://github.com/vdyakushina/FusAmp.git<br/>
 cd FusAmp/
 
 ### Run
