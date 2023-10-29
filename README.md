@@ -69,3 +69,9 @@ cd FusAmp/
   bedtools<br/>
   standart python libraries: pandas, numpy, subprocess, re, os, argparse, pathlib
 
+## Future tasks:
+1. Implement selection imbalance and expression with its destribution
+2. Fix ALK imbalance calculation
+3. Wrap to conda environment and docker container
+4. Add analyze with STAR-fusions
+
