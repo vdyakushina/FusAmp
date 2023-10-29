@@ -25,5 +25,5 @@ scripts=os.path.dirname(__file__)+'/scripts/'
 
 ## 1. Align
 run('python3 %sfusions_preprocess.py --fasta %s --fastq1 %s --fastq2 %s --bam %s --adapters %s' % (scripts, fasta, fastq1, fastq2, bam, adapters), shell=True, executable='/bin/bash')
-## 2. Call C>T and calculate mean metrics
+## 2. Get qc metrics, count reads over targets, filter results
 run('python3 %sfusions_assess.py  -p %s --controls %s --bam %s -o %s' % (scripts, panel, controls, bam, output), shell=True, executable='/bin/bash')
