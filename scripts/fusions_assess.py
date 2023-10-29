@@ -97,7 +97,7 @@ expressions={i:j/controls_07_sum for (i,j) in expressions.items()}
 
 ### Write results
 
-for fn,dct in zip(['qc.tsv', 'fusions.tsv', 'imbalance_five_p.tsv', 'imbalance_three_p.tsv', 'imbalance.tsv'], [qc, fusions, five_p, three_p, imbalance]):
+for fn,dct in zip(['qc.tsv', 'fusions.tsv', 'imbalance_five_p.tsv', 'imbalance_three_p.tsv', 'imbalance.tsv', 'expression.tsv', 'controls.tsv'], [qc, fusions, five_p, three_p, imbalance, expressions, controls_07]):
 	with open(f'{outdir}/{fn}', 'w') as outf:
 		outf.write('\n'.join([n+'\t'+str(v) for n,v in dct.items()])+'\n')
 
