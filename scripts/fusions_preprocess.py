@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser(description="Analyse fusion panel")
 parser.add_argument("--fasta", help="path to ref fasta file. e.g. ./WG_IAD154041_THCAF2/WG_IAD154041_THCAF_v3.20181217._Reference.fasta")
 parser.add_argument("--fastq1", help="path to fastq1 file")
 parser.add_argument("--fastq2", help="path to fastq2 file")
-parser.add_argument("--bam", help="path to ref fasta file")
+parser.add_argument("--bam", help="path to bam file that will be written")
 parser.add_argument("--adapters", help="path to file with two adapter sequences, each sequnce in new line. e.g. adapters_Illumina.fa")
 
 args = parser.parse_args()
