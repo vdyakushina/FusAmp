@@ -15,7 +15,7 @@ Analyze fusions, 3'/5' imbalance, expression markers from targeted amplification
       - controls_integrity - % reads aligned on control genes under condition -f 0.7 -F 0.7 from total number of reads aligned on control genes;
       - controls_mean_fraction - mean value from frctions of targets (accordinf ded file) covered. Calulated from columun containind "% of A at depth" from bedtools coverage resulting file.<br/>
 
-   The main QC metric - controls_07_sum represents how RNA molecules were degradated <br/>
+   The main QC metric - controls_integrity represents how RNA molecules were degradated <br/>
       
    2.2. fusions.tsv - raw read counts from fusions, calculated with bedtools coverage. Contains non confident calls, filtered fusions are in results.tsv.<br/>
    
